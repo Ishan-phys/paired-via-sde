@@ -1,6 +1,6 @@
 # Paired-Via-Sde
 
-We implement a Score-based Generative Model to perform image-to-image translations from an image domain A to an image domain B and vice versa. 
+We implement a Score-based Generative Model to perform paired image-to-image translations from an image domain A to an image domain B and vice versa. 
 Domain A consists of satellite images. Domain B consists of the corresponding maps style images. 
 
 ### Results:
@@ -8,6 +8,12 @@ Domain A consists of satellite images. Domain B consists of the corresponding ma
 |:---:|
 |![](assets/results.png)|
 
+
+We calculated the Structural Similarity Index Measure(SSIM) between the generated and actual images. With 1500 sampling steps the SSIM was calculated to be 0.977 showing that our model generated images very similar to the actual ground truth. The SSIM score as a function of the number of sampling steps is depicted in the figure below
+
+|SSIM vs Number of Sampling Steps|
+|:---:|
+|![](assets/results2.png)|
 
 
 ### Dataset
